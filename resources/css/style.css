@@ -73,24 +73,30 @@ body {
 /* ---------------------- */
 
 /* NAV MENU-------------- */
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
 .logo-container {
   display: flex;
   justify-self: flex-start;
 }
 
 .nav-logo {
-  font-size: 1.5rem;
+  margin-left: 2em;
+  height: 60px;
+}
+
+.nav-h1 {
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.8;
   align-self: center;
   margin-left: 2em;
-}
-
-.main_nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 80px;
 }
 
 .nav-menu {
@@ -271,6 +277,11 @@ h5 {
 .benefit-text {
   line-height: 1.8rem;
   width: 80%;
+}
+
+.emphasis {
+  letter-spacing: 0.2rem;
+  color: #373eb0;
 }
 
 .long-text {
