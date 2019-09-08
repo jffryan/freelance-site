@@ -147,7 +147,8 @@ body {
   font-size: 1.1rem;
 }
 
-.btn-primary {
+.btn-primary,
+input[type="submit"] {
   background-image: linear-gradient(
     to left top,
     #373eb0,
@@ -160,8 +161,10 @@ body {
   box-shadow: 7px 7px 3px #b7cee8;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+input[type="submit"]:hover {
   opacity: 0.85;
+  cursor: pointer;
 }
 
 .btn-outline {
@@ -441,6 +444,40 @@ h5 {
 }
 
 /* ---------------------- */
+/* CONSTRUCTION */
+/* ---------------------- */
+
+.construction-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://source.unsplash.com/random);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.construction-hero .button-container a:nth-of-type(2) {
+  margin-left: 2rem;
+}
+
+.construction-hero .btn-primary {
+  box-shadow: none;
+}
+
+/* ---------------------- */
+/* CONTACT */
+/* ---------------------- */
+
+.form-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---------------------- */
 /* FOOTER */
 /* ---------------------- */
 
@@ -529,7 +566,7 @@ h5 {
 }
 
 #footer-middle .col-1-of-4 {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 #footer-middle .col-1-of-4 p {
