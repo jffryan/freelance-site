@@ -11,8 +11,6 @@ function fixNav() {
   }
 }
 
-window.addEventListener("scroll", fixNav);
-
 const navSlide = () => {
   const burger = document.querySelector(`.burger`);
   const nav = document.querySelector(`.nav-links`);
@@ -35,4 +33,5 @@ const navSlide = () => {
   });
 };
 
+window.addEventListener("scroll", fixNav);
 navSlide();

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Free Web</title>
+    <title>Conversations That Click</title>
     <link
       href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap"
       rel="stylesheet"
@@ -12,130 +12,49 @@
     <script src="https://kit.fontawesome.com/59c9b46453.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link href="resources/css/style.css" type="text/css" rel="stylesheet" />
+    <link href="resources/css/queries.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
-    <nav id="main_nav" class="main_nav">
-      <div class="logo-container">
-        <a href="index.html">
-          <img src="resources/imgs/ctc3.png" class="nav-logo" />
-        </a>
-        <h1 class="nav-h1">Conversations That Click</h1>
+    <nav id="main-nav">
+      <div class="logo">
+        <h4><a href="/">Conversations That Click</a></h4>
       </div>
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="/construction.html">Marketing</a></li>
-        <li class="nav-item">
-          <a href="/construction.html">Web Development</a>
-        </li>
-        <li class="nav-item"><a href="/construction.html">About</a></li>
-        <li class="nav-item"><a href="/construction.html">Contact</a></li>
-        <li class="nav-item">
-          <a id="nav-button" class="btn btn-primary" href="/construction.html"
-            >Get Started</a
-          >
-        </li>
+      <ul class="nav-links">
+        <!-- Temporary Disable -->
+        <!-- <li><a href="/construction.html">Marketing</a></li>
+            <li><a href="/construction.html">Websites</a></li> -->
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
       </ul>
-    </nav>
-    <section class="form-section">
-      <div class="container">
-        <form id="contact-form" method="post" action="contact.php" role="form">
-          <div class="messages"></div>
-
-          <div class="controls">
-            <div class="form-group">
-              <label for="form_name">Firstname *</label>
-              <input
-                id="form_name"
-                type="text"
-                name="name"
-                class="form-control"
-                placeholder="Please enter your firstname *"
-                required="required"
-                data-error="Firstname is required."
-              />
-              <div class="help-block with-errors"></div>
-            </div>
-            <div class="form-group">
-              <label for="form_lastname">Lastname *</label>
-              <input
-                id="form_lastname"
-                type="text"
-                name="surname"
-                class="form-control"
-                placeholder="Please enter your lastname *"
-                required="required"
-                data-error="Lastname is required."
-              />
-              <div class="help-block with-errors"></div>
-            </div>
-            <div class="form-group">
-              <label for="form_email">Email *</label>
-              <input
-                id="form_email"
-                type="email"
-                name="email"
-                class="form-control"
-                placeholder="Please enter your email *"
-                required="required"
-                data-error="Valid email is required."
-              />
-              <div class="help-block with-errors"></div>
-            </div>
-            <div class="form-group">
-              <label for="form_need">Please specify your need *</label>
-              <select
-                id="form_need"
-                name="need"
-                class="form-control"
-                required="required"
-                data-error="Please specify your need."
-              >
-                <option value=""></option>
-                <option value="Request quotation">Request quotation</option>
-                <option value="Request order status"
-                  >Request order status</option
-                >
-                <option value="Request copy of an invoice"
-                  >Request copy of an invoice</option
-                >
-                <option value="Other">Other</option>
-              </select>
-              <div class="help-block with-errors"></div>
-            </div>
-            <div class="form-group">
-              <label for="form_message">Message *</label>
-              <textarea
-                id="form_message"
-                name="message"
-                class="form-control"
-                placeholder="Message for me *"
-                rows="4"
-                required="required"
-                data-error="Please, leave us a message."
-              ></textarea>
-              <div class="help-block with-errors"></div>
-            </div>
-            <input
-              type="submit"
-              class="btn btn-success btn-send"
-              value="Send message"
-            />
-            <p class="text-muted">
-              <strong>*</strong> These fields are required.
-            </p>
-          </div>
-        </form>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
-    </section>
-    <section class="construction-hero">
+    </nav>
+    <section class="hero">
       <div class="container">
-        <h1 class="lead-heading">Under Construction</h1>
-        <p class="lead">
-          Thanks for checking out this page, but unfortunately it doesn't exist
-          yet! Check back soon for updates and new services.
-        </p>
-        <div class="button-container">
-          <a href="/construction.html" class="btn btn-primary">Email Me</a>
-          <a href="/index.html" class="btn btn-outline">Go Back</a>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h1 class="lead-heading">Let's Talk</h1>
+            <p class="lead">
+              Whether you're interested in starting a project together or just
+              want to say hi, you can reach me by clicking one of the buttons
+              below.
+            </p>
+            <div class="button-container">
+              <a
+                href="mailto:jeff@conversationsthatclick.com"
+                class="btn btn-primary"
+                >Email</a
+              >
+              <a href="tel:16158206834" class="btn btn-outline">Call</a>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <img class="main-img" src="resources/imgs/vectors/contact.svg" />
+          </div>
         </div>
       </div>
     </section>
@@ -153,10 +72,6 @@
                 email and I'll give you a growth plan customized for your
                 business &mdash; absolutely free and with no obligation.
               </p>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Explicabo, voluptate?
-              </p> -->
               <h4>
                 Say Hello!
                 <span class="email-head">jeff@conversationsthatclick.com</span>
@@ -164,7 +79,7 @@
             </div>
             <div class="col-1-of-4">
               <div class="button-wrapper">
-                <a href="/construction.html" class="btn btn-white"
+                <a href="/contact.html" class="btn btn-white"
                   >Get A Growth Plan</a
                 >
               </div>
@@ -181,7 +96,7 @@
               <p>Let's talk: jeff@conversationsthatclick.com</p>
             </div>
             <div class="col-1-of-4">
-              <h4 class="title">Company Info</h4>
+              <h4 class="title">Info</h4>
               <ul class="footer-menu">
                 <li>
                   <a class="footer-menu-item" href="/construction.html"
@@ -192,14 +107,8 @@
                   <a class="footer-menu-item" href="/construction.html">Blog</a>
                 </li>
                 <li>
-                  <a class="footer-menu-item" href="/construction.html"
-                    >Contact</a
-                  >
+                  <a class="footer-menu-item" href="/contact.html">Contact</a>
                 </li>
-                <!-- <li><a class="footer-menu-item" href="/construction.html">Careers</a></li>
-                <li>
-                  <a class="footer-menu-item" href="/construction.html">Client Resources</a>
-                </li> -->
               </ul>
             </div>
             <div class="col-1-of-4">
@@ -252,18 +161,18 @@
                 </li>
                 <li>
                   <a class="footer-menu-item" href="/construction.html"
-                    >Bootstrap</a
+                    >React</a
                   >
                 </li>
                 <li>
                   <a class="footer-menu-item" href="/construction.html"
-                    >Javascript</a
+                    >Web Apps</a
                   >
                 </li>
-                <!-- <li><a class="footer-menu-item" href="/construction.html">React</a></li>
-                <li>
-                  <a class="footer-menu-item" href="/construction.html">Gatsby</a>
-                </li> -->
+                <!--
+                  <li>
+                    <a class="footer-menu-item" href="/construction.html">Gatsby</a>
+                  </li> -->
               </ul>
             </div>
           </div>
@@ -280,19 +189,22 @@
             <p>Made with <i class="fas fa-heart"></i> in Nashville, TN</p>
           </div>
           <div id="footer-social">
-            <a href="/construction.html" class="social-icon"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="/construction.html" class="social-icon"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a href="/construction.html" class="social-icon"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="/construction.html" class="social-icon"
-              ><i class="fab fa-youtube"></i
-            ></a>
-            <a href="/construction.html" class="social-icon"
+            <!-- <a href="/construction.html" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="/construction.html" class="social-icon"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="/construction.html" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="/construction.html" class="social-icon"
+                ><i class="fab fa-youtube"></i
+              ></a> -->
+            <a
+              href="https://github.com/jffryan"
+              target="_blank"
+              class="social-icon"
               ><i class="fab fa-github"></i
             ></a>
           </div>
